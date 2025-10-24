@@ -144,6 +144,7 @@ button:active {
     flex: 1;
     color: #c4d3e9;
     font-weight: 300;
+    max-height: 150px;
     text-shadow: 1px 1px 1px black;
 }
 
