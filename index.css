@@ -161,20 +161,26 @@ button:active {
 
     header {
         text-align: start;
-        padding: 0.2em 0 2em 0;
+        padding: 0;
+        padding-bottom: 2em;
     }
-    body{
+
+    body {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100svh;
     }
-    .top{
+
+    .top {
         display: block;
     }
+
     .container {
         height: 95svh;
         padding: 1rem;
+        border: 2.5px solid #ffffff4d;
+        border-radius: 8px;    
     }
     .navform{
         border-start-end-radius: 6px;

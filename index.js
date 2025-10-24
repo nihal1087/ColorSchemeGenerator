@@ -12,22 +12,20 @@ const defaultColors = [
 ]
 
 function renderPalette(colors) {
-  palette.innerHTML = "" 
+  palette.innerHTML = ""
 
   colors.forEach((color) => {
     const div = document.createElement("div")
     div.classList.add("color-box")
     div.innerHTML = `<div class="color" style="background:${color}" data-color="${color}">${color}</div>`
-    
+
     palette.appendChild(div)
   })
 
   document.querySelectorAll("[data-color]").forEach(el => {
     el.addEventListener("click", () => {
       const hex = el.getAttribute("data-color")
-      navigator.clipboard.writeText(hex).then(() => {
-        alert(`${hex} copied!`)
-      })
+      navigator.clipboard.writeText(hex)
     })
   })
 }
@@ -44,7 +42,7 @@ function fetchColors(baseColor, scheme) {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault()
-  const baseColor = colorInput.value.slice(1)  
+  const baseColor = colorInput.value.slice(1)
   const scheme = schemeSelect.value
   fetchColors(baseColor, scheme)
 })
