@@ -6,10 +6,14 @@
 
 html,
 body {
-    min-height: 100dvh;
     font-family: "Inter", sans-serif;
-    background: #111827;
-    color: #929292;
+    background: #172533;
+    background: radial-gradient(circle, #172533 0%, #121d32 49%, #0d1530 100%);
+    color: #bfbfc0;
+}
+
+.container {
+    height: 100svh;
     display: flex;
     flex-direction: column;
 }
@@ -32,22 +36,21 @@ header {
 header h1 {
     font-weight: 900;
     color: #F55A5A;
-    font-size: 3.5rem;
-    line-height: 1em;
+    font-size: 3.25rem;
+    line-height: 1.05em;
 }
 
-header h3 {
-    font-size: 1rem;
-    padding-left: .5em;
+header p {
+    font-size: 1.05rem;
+    padding-left: .4em;
 }
 
 .navform {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1em;
-    height: 5em;
     padding: 1.25em;
+    gap: 1em;
     background-color: #1F2937;
     width: 100%;
 }
@@ -62,8 +65,7 @@ button,
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 6rem;
-    border-radius: 5px;
+    width: 3.75rem;
     cursor: pointer;
     padding: 0;
     background: none;
@@ -83,11 +85,11 @@ button,
 select {
     font-family: inherit;
     border-radius: 5px;
-    font-size: .8em;
-    border: 1.5px solid #929292;
+    font-size: .85em;
+    border: 1.75px solid #929292;
     background-color: #1F2937;
     color: #D1D5DB;
-    padding: 0 .6em;
+    padding: .6em;
     width: 60%;
     cursor: pointer;
     outline: none;
@@ -95,7 +97,7 @@ select {
 
 button {
     text-align: center;
-    font-size: .8rem;
+    font-size: .85rem;
     font-family: inherit;
     font-weight: 500;
     border-radius: 5px;
@@ -104,7 +106,7 @@ button {
     cursor: pointer;
     transition: transform 0.1s ease, background 0.2s ease;
     border: none;
-    padding: 3px 6px;
+    padding: 0em 1em;
 }
 
 button:active {
@@ -119,7 +121,7 @@ button:active {
     flex: 1;
     overflow: hidden;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     background-color: #1F2937;
 }
 
@@ -144,13 +146,6 @@ button:active {
     text-shadow: 1px 1px 1px black;
 }
 
-footer {
-    text-align: center;
-    padding: 1em;
-    font-size: .8em;
-    margin-top: auto;
-}
-
 /* Media Queries */
 @media(min-width: 450px) {
     html {
@@ -167,34 +162,25 @@ footer {
         text-align: start;
         padding: 0.2em 0 2em 0;
     }
-
-    header h1 {
-        font-size: 3rem;
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100svh;
     }
-
-    #color-palette {
-        grid-template-columns: repeat(5, 1fr);
-        border-end-start-radius: 6px;
-        border-end-end-radius: 6px;
+    .top{
+        display: block;
     }
-
-    .navform {
+    .container {
+        height: 95svh;
+        padding: 1rem;
+    }
+    .navform{
+        border-start-end-radius: 6px;
         border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
     }
-
-    select,
-    .colorpicker,
-    button {
-        height: 50px;
-    }
-
-    select {
-        border: 2px solid #929292;
-    }
-
-    button,
-    .colorpicker {
-        width: 110px;
+    .color-palette{
+        border-end-end-radius: 6px;
+        border-bottom-left-radius: 6px;
     }
 }

@@ -15,12 +15,13 @@
 </head>
 
 <body>
-
+    <div class="container">
     <main>
         <header>
-            <h1>Colour Scheme Generator</h1>
-            <h3>Tap on the colour to copy</h3>
+            <h1><span class="top">Colour</span>  Scheme Generator</h1>
+            <p>Tap on the colour to copy</p>
         </header>
+
         <form id="color-form" class="navform">
             <input type="color" id="colorpicker" class="colorpicker" value="#F55A5A">
             <select id="scheme">
@@ -33,7 +34,7 @@
                 <option value="triad">Triad</option>
                 <option value="quad">Quad</option>
             </select>
-            <button type="submit">Get colour scheme</button>
+            <button type="submit">Generate</button>
         </form>
 
         <section id="color-palette" class="color-palette">
@@ -41,8 +42,8 @@
         </section>
     </main>
 
-    <footer>&copy; 2025 nyl All rights reserved.</footer>
-
+    </div>
+    
     <script src="index.js"></script>
 </body>
 
