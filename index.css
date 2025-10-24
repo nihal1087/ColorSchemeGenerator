@@ -144,7 +144,6 @@ button:active {
     flex: 1;
     color: #c4d3e9;
     font-weight: 300;
-    max-height: 150px;
     text-shadow: 1px 1px 1px black;
 }
 
@@ -182,6 +181,7 @@ button:active {
         padding: 1rem;
         border: 2.5px solid #ffffff4d;
         border-radius: 8px;    
+        max-height: 750px;
     }
     .navform{
         border-start-end-radius: 6px;
