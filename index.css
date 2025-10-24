@@ -49,7 +49,7 @@ header p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25em;
+    padding: 1em;
     gap: 1em;
     background-color: #1F2937;
     width: 100%;
