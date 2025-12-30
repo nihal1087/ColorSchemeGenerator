@@ -148,9 +148,9 @@ button:active {
   justify-content: center;
   align-items: center;
   flex: 1;
-  color: #d8d8d8;
+  color: #e8dfdf;
   font-weight: 300;
-  text-shadow: 1px .5px 2px #393939;
+  text-shadow: 1px .5px 2px #545252;
 }
 
 /* Media Queries */
@@ -170,7 +170,9 @@ button:active {
     padding: 0;
     padding-bottom: 2em;
   }
-
+  header h1 {
+    font-size: 3.25rem;
+  }
   body {
     display: flex;
     align-items: center;
