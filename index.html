@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
 
     <!-- Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Colour Scheme Generator</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-    <main>
+      <main>
         <header>
-            <h1><span class="top">Colour</span>  Scheme Generator</h1>
-            <p>Tap on the colour to copy</p>
+          <h1><span class="top">Colour</span> Scheme Generator</h1>
+          <p>Tap on the colour to copy</p>
         </header>
 
         <form id="color-form" class="navform">
-            <input type="color" id="colorpicker" class="colorpicker" value="#F55A5A">
-            <select id="scheme">
-                <option value="monochrome">Monochrome</option>
-                <option value="monochrome-dark">Monochrome-dark</option>
-                <option value="monochrome-light">Monochrome-light</option>
-                <option value="analogic">Analogic</option>
-                <option value="complement">Complement</option>
-                <option value="analogic-complement">Analogic-complement</option>
-                <option value="triad">Triad</option>
-                <option value="quad">Quad</option>
-            </select>
-            <button type="submit">Generate</button>
+          <input
+            type="color"
+            id="colorpicker"
+            class="colorpicker"
+            value="#f45454"
+          />
+          <select id="scheme">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+          </select>
+          <button type="submit">Generate</button>
         </form>
 
-        <section id="color-palette" class="color-palette">
-
-        </section>
-    </main>
-
+        <section id="color-palette" class="color-palette"></section>
+      </main>
     </div>
-    
-    <script src="index.js"></script>
-</body>
 
+    <script src="index.js"></script>
+  </body>
 </html>
