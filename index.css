@@ -30,7 +30,7 @@ main {
 
 header {
   width: 100%;
-  padding: 1em 0em 2em 1em;
+  padding: .75em 0em 3em .75em;
 }
 
 header h1 {
